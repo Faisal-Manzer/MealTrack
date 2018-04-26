@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B224935209253E200B95A6A /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B224934209253E100B95A6A /* Meal.swift */; };
 		4B6FD457209204AA007C2BD9 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6FD456209204AA007C2BD9 /* RatingControl.swift */; };
 		4BC5D2382090B4E000B6349D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC5D2372090B4E000B6349D /* AppDelegate.swift */; };
 		4BC5D23A2090B4E000B6349D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC5D2392090B4E000B6349D /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B224934209253E100B95A6A /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		4B6FD456209204AA007C2BD9 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		4BC5D2342090B4E000B6349D /* MealTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC5D2372090B4E000B6349D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				4BC5D2372090B4E000B6349D /* AppDelegate.swift */,
 				4BC5D2392090B4E000B6349D /* ViewController.swift */,
 				4B6FD456209204AA007C2BD9 /* RatingControl.swift */,
+				4B224934209253E100B95A6A /* Meal.swift */,
 				4BC5D23B2090B4E000B6349D /* Main.storyboard */,
 				4BC5D23E2090B4E400B6349D /* Assets.xcassets */,
 				4BC5D2402090B4E400B6349D /* LaunchScreen.storyboard */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B224935209253E200B95A6A /* Meal.swift in Sources */,
 				4BC5D23A2090B4E000B6349D /* ViewController.swift in Sources */,
 				4B6FD457209204AA007C2BD9 /* RatingControl.swift in Sources */,
 				4BC5D2382090B4E000B6349D /* AppDelegate.swift in Sources */,

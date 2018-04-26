@@ -34,6 +34,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
         textLabel.text = textField.text
+        textField.text = ""
     }
 
     //MARK: UIImagePickerControllerDelegate
