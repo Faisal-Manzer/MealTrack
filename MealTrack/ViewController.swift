@@ -11,20 +11,26 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
 
     //MARK: Properties
-    @IBOutlet weak var mealName: UITextField!
-    @IBOutlet weak var mealLabel: UILabel!
+    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var textInput: UITextField!
+    
+    //MARK: DefaultValues
+    let defaultTextInput = ""
+    let defaultTextInputPlaceholder = "Enter Meal Name"
+    let defaultTextLabel = "Meal Name"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        mealName.delegate = self
+        textInput.delegate = self
     }
 
-    //MARK: Action
-    
-    @IBAction func mealBtn(_ sender: Any) {
-        mealLabel.text = "Default text"
+    //MARK: Action    
+    @IBAction func resetButton(_ sender: UIButton) {
+        textLabel.text = defaultTextLabel
+        textInput.text = defaultTextInput
     }
+    
 }
 

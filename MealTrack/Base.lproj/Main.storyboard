@@ -35,10 +35,10 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yk-cW-lgD">
-                                        <rect key="frame" x="0.0" y="66.5" width="151" height="30"/>
-                                        <state key="normal" title="Set Default Label Text"/>
+                                        <rect key="frame" x="0.0" y="66.5" width="39" height="30"/>
+                                        <state key="normal" title="Reset"/>
                                         <connections>
-                                            <action selector="mealBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TVG-Gp-L9H"/>
+                                            <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="clq-jf-vPT"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -57,8 +57,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="mealLabel" destination="OWJ-MR-Vtn" id="eim-9o-BEQ"/>
-                        <outlet property="mealName" destination="XcD-4a-GAl" id="L9J-pk-t14"/>
+                        <outlet property="textInput" destination="XcD-4a-GAl" id="EK2-0d-seS"/>
+                        <outlet property="textLabel" destination="OWJ-MR-Vtn" id="oEh-cj-NQ2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
