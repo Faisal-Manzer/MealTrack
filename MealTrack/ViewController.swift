@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var textInput: UITextField!
     @IBOutlet weak var imagePicker: UIImageView!
+    @IBOutlet weak var ratingControl: RatingControl!
     
     //MARK: DefaultValues
     let defaultTextInput = ""
@@ -67,11 +68,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         // Make sure ViewController is notified when the user picks an image.
         imagePickerController.delegate = self
         present(imagePickerController, animated: true, completion: nil)
-    }
-    @IBAction func resetButton(_ sender: UIButton) {
-        textLabel.text = defaultTextLabel
-        textInput.text = defaultTextInput
-        hideKeyboard()
     }
     
     //MARK: HelperFunction
