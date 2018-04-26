@@ -25,11 +25,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         textInput.delegate = self
     }
+    
+    //MARK: UITextFieldDelegate
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Hide Keyboard
+        textInput.resignFirstResponder()
+        return true
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textLabel.text = textField.text
+    }
 
-    //MARK: Action    
+    //MARK: Action
     @IBAction func resetButton(_ sender: UIButton) {
         textLabel.text = defaultTextLabel
         textInput.text = defaultTextInput
+        textInput.resignFirstResponder()
     }
     
 }
