@@ -18,7 +18,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     
     //MARK: DefaultValues
     let defaultTextInput = ""
-    let defaultTextInputPlaceholder = "Enter Meal Name"
     let defaultTextLabel = "Meal Name"
     
     override func viewDidLoad() {
