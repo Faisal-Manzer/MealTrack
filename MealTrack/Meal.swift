@@ -8,12 +8,20 @@
 
 import UIKit
 
-class Meal {
+class Meal: NSObject, NSCoding {
     //MARK: Properties
     var name: String
     var photo: UIImage?
     var rating: Int
+    
+    struct PropertyKey {
+        static let name = "name"
+        static let photo = "photo"
+        static let rating = "rating"
+    }
+    
     init?(name: String, photo: UIImage?, rating: Int) {
+        super.init()
         
         // Initialization should fail if there is no name or if the rating is negative.
         // The name must not be empty
