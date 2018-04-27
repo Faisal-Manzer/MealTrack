@@ -116,8 +116,6 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     
     //MARK: Action
     @IBAction func pickImageFromPhotos(_ sender: UITapGestureRecognizer) {
-        
-        print("ok")
         hideKeyboard()
         
         // UIImagePickerController is a view controller that lets a user pick media from their photo library.

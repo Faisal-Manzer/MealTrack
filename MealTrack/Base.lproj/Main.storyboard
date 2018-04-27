@@ -39,7 +39,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eR5-rT-U8g" customClass="RatingControl" customModule="MealTrack" customModuleProvider="target">
+                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eR5-rT-U8g" customClass="RatingControl" customModule="MealTrack" customModuleProvider="target">
                                             <rect key="frame" x="98" y="40" width="261" height="50"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </stackView>
@@ -79,7 +79,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IBL-YP-byE">
-                                <rect key="frame" x="16" y="84" width="343" height="433"/>
+                                <rect key="frame" x="16" y="84" width="343" height="424"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Meal Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XcD-4a-GAl">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -98,7 +98,7 @@
                                         </connections>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ViZ-kg-hH4" customClass="RatingControl" customModule="MealTrack" customModuleProvider="target">
-                                        <rect key="frame" x="45.5" y="389" width="252" height="44"/>
+                                        <rect key="frame" x="68" y="389" width="207" height="35"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
