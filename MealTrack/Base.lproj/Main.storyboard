@@ -117,8 +117,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Meal" id="S0P-xJ-4Wp">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="prD-SA-UJW"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="qRE-H0-BVS"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="prD-SA-UJW">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="wan-aT-fUn"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="qRE-H0-BVS">
+                            <connections>
+                                <segue destination="bZ9-ME-5OK" kind="unwind" unwindAction="unwindToMealListWithSender:" id="OEd-wW-gMe"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="imagePicker" destination="YHd-pA-gba" id="z4w-rg-QxY"/>
@@ -128,6 +136,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="bZ9-ME-5OK" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="Avw-YX-0RT">
                     <connections>
                         <action selector="pickImageFromPhotos:" destination="BYZ-38-t0r" id="Ye8-ys-oMm"/>
