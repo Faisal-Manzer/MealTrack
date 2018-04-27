@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MealViewController.swift
 //  MealTrack
 //
 //  Created by Faisal Manzer on 25/04/18.
@@ -8,17 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     //MARK: Properties
-    @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var textInput: UITextField!
     @IBOutlet weak var imagePicker: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     
     //MARK: DefaultValues
     let defaultTextInput = ""
-    let defaultTextLabel = "Meal Name"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,13 +31,12 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         return true
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
-        textLabel.text = textField.text
-        textField.text = ""
+        
     }
 
     //MARK: UIImagePickerControllerDelegate
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        dismiss(animated: true, completion: nil)
+        dismissPicker()
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         // The info dictionary may contain multiple representations of the image. You want to use the original.
@@ -50,7 +47,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         // Changing the imageView image to selectedImage
         imagePicker.image = selectedImage
         
-        dismiss(animated: true, completion: nil)
+        dismissPicker()
     }
     
     //MARK: Action

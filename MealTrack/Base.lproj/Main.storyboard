@@ -71,22 +71,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IBL-YP-byE">
-                                <rect key="frame" x="16" y="40" width="343" height="465"/>
+                                <rect key="frame" x="16" y="40" width="343" height="433"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWJ-MR-Vtn">
-                                        <rect key="frame" x="122.5" y="0.0" width="98.5" height="24"/>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Meal Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XcD-4a-GAl">
-                                        <rect key="frame" x="0.0" y="32" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImagePicker" translatesAutoresizingMaskIntoConstraints="NO" id="YHd-pA-gba">
-                                        <rect key="frame" x="0.0" y="70" width="343" height="343"/>
+                                        <rect key="frame" x="0.0" y="38" width="343" height="343"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="YHd-pA-gba" secondAttribute="height" multiplier="1:1" id="KFf-7U-we6"/>
@@ -96,7 +90,7 @@
                                         </connections>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ViZ-kg-hH4" customClass="RatingControl" customModule="MealTrack" customModuleProvider="target">
-                                        <rect key="frame" x="45.5" y="421" width="252" height="44"/>
+                                        <rect key="frame" x="45.5" y="389" width="252" height="44"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -119,7 +113,6 @@
                         <outlet property="imagePicker" destination="YHd-pA-gba" id="z4w-rg-QxY"/>
                         <outlet property="ratingControl" destination="ViZ-kg-hH4" id="HRh-Eb-5A4"/>
                         <outlet property="textInput" destination="XcD-4a-GAl" id="EK2-0d-seS"/>
-                        <outlet property="textLabel" destination="OWJ-MR-Vtn" id="oEh-cj-NQ2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
